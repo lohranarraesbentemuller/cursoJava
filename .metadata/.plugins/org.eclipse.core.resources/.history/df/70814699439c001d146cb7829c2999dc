@@ -1,0 +1,34 @@
+package entidades;
+
+public class Empregado {
+    String Nome;
+    int id;
+    double salario;
+    
+    
+	public Empregado(String nome, int id, double salario) {
+		Nome = nome;
+		this.id = id;
+		this.salario = salario;
+	}
+	public String getNome() {
+		return Nome;
+	}
+	public void setNome(String nome) {
+		Nome = nome;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+    
+    	
+}

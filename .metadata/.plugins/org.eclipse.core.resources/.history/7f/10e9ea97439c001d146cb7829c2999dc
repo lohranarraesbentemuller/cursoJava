@@ -1,0 +1,9 @@
+package entidades;
+
+public class Empregado {
+    String Nome;
+    int id;
+    double salario;
+    
+    	
+}

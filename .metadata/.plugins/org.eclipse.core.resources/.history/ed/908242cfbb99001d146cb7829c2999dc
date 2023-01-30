@@ -1,0 +1,10 @@
+package aplicacao;
+
+import entidades.Conta;
+
+public class Programa {
+      Conta conta01=new Conta(12345,500.10,"Lohran");
+      
+      
+      
+}

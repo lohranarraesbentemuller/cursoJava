@@ -1,0 +1,11 @@
+package aplicacao;
+
+import entidades.Conta;
+
+public class Programa {
+      Conta conta_lohran=new Conta(12345,(float) 500.10,"Lohran");
+      conta_lohran.deposito(25);
+      conta_lohran.saque(35);
+      printf("valor"+conta_lohran.getSaldo());
+      
+}

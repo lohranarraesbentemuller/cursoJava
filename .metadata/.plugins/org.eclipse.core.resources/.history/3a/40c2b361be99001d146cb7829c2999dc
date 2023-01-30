@@ -1,0 +1,27 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidades.Conta;
+
+public class ProgramaConta {
+
+	public static void main(String[] args) {
+   	   System.out.printf("Digite o número da conta");
+   	   Scanner sc = new Scanner(System.in);
+   	   int numeroDaConta=sc.nextInt();
+   	   System.out.printf("Digite o nome do titular");
+   	   String titular=sc.next();
+   	   System.out.printf("Digite o saldo inicial");
+   	   double saldoInicial=sc.nextDouble();
+       Conta conta_lohran=new Conta(numeroDaConta,titular,saldoInicial);
+       
+       System.out.printf("Digite um valor para depósito");
+       conta_lohran.deposito(sc.nextDouble());
+       System.out.printf(conta_lohran.toString());
+       conta_lohran.saque(sc.nextDouble());
+       System.out.printf(conta_lohran.toString());
+       sc.close();
+	}
+
+}

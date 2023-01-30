@@ -1,0 +1,18 @@
+package aplicacao;
+
+import entidades.Conta;
+
+public class ProgramaConta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Conta conta_lohran=new Conta(1323,"Lohran",20.00);
+       
+       conta_lohran.deposito(30.50);
+       printf(conta_lohran.toString());
+       conta_lohran.saque(25.22);
+       printf(conta_lohran.toString());
+       
+	}
+
+}

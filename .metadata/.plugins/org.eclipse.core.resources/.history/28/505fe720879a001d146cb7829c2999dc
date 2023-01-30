@@ -1,0 +1,43 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidades.Pessoa;
+
+public class Programa {
+
+	public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   System.out.print("Quantas pessoas serão digitadas?\n");
+	   int n = 0;
+	   n=sc.nextInt();
+       Pessoa[] pessoas = new Pessoa[n];
+       int i;
+       for(i=0;i<pessoas.length;i++)
+       {
+    	 System.out.print("digite o nome da pessoa\n");
+    	 String nome=sc.next();
+    	 System.out.print("digite a idade da pessoa\n");
+    	 int idade=sc.nextInt();
+    	 System.out.print("digite a altura da pessoa\n");
+    	 double altura=sc.nextDouble();
+    	 Pessoa pessoa=new Pessoa(nome,idade,altura);
+    	 pessoas[i]=pessoa;
+       }
+       double somaAltura=0;
+       double menores16=0;
+       for (i =0;i<pessoas.length;i++)
+       {
+    	   somaAltura+=pessoas[i].getAltura();
+    	   if(pessoas[i].getIdade()<=16)
+    	   {
+    		   menores16++;
+    	   }
+       }
+       System.out.printf("\nMédia das alturas %.2f",somaAltura/pessoas.length);
+       System.out.printf("\nPercentual de pessoas com menos de 16 anos %.2f",100*menores16/pessoas.length);
+       
+       sc.close();
+	}
+
+}

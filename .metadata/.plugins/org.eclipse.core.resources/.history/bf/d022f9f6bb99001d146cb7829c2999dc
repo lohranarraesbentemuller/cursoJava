@@ -1,0 +1,38 @@
+package entidades;
+
+public class Conta {
+   int numero;
+   float saldo;
+   String nome;
+   
+public Conta(int numero, float saldo, String nome) {
+	this.numero = numero;
+	this.saldo = saldo;
+	this.nome = nome;
+}
+
+
+
+public int getNumero() {
+	return numero;
+}
+
+public float getSaldo() {
+	return saldo;
+}
+
+public String getNome() {
+	return nome;
+}
+public void setNome(String nome) {
+	this.nome = nome;
+}
+   
+public void deposito(float valor) {
+	this.saldo+=valor;
+}
+public void saque(float valor) {
+   float taxa=5;
+   this.saldo=this.saldo - valor-taxa;
+}
+}

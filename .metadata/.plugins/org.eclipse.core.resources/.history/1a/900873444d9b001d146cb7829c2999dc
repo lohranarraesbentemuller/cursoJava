@@ -1,0 +1,13 @@
+package programa;
+
+import entidade.Quarto;
+
+public class Aplicacao {
+
+	public static void main(String[] args) {
+		Quarto quartos= new Quarto()[10];
+		
+
+	}
+
+}

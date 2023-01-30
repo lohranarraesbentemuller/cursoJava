@@ -1,0 +1,24 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+import entidades.Pessoa;
+
+public class Programa {
+
+	public static void main(String[] args) {
+	   int n = 10;
+	   Scanner sc = new Scanner(System.in);
+       Pessoa[] pessoas = new Pessoa[n];
+       int i;
+       for(i=0;i<n;i++)
+       {
+    	 System.out.print("digite o nome, a idade e a altura da pessoa\n");
+    	 Pessoa pessoa=new Pessoa(sc.next(),sc.nextInt(),sc.nextDouble());
+    	 pessoas[n]=pessoa;
+       }
+       
+       sc.close();
+	}
+
+}
